@@ -1,0 +1,18 @@
+.Area {
+  margin-bottom: 25px;
+}
+
+.Area .Area-Title {
+  position: relative;
+  width: fit-content;
+  max-width: 50%;
+  margin: 0px auto;
+  font-size: 2rem;
+}
+
+.Area-Tiers {
+  font-size: 1.25rem;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}

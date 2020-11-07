@@ -1,38 +1,178 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Righteous", cursive;
+  overflow: hidden scroll;
+}
+
+.App .Title {
+  padding: 25px 0px;
+  margin: 0px;
+  font-size: 3rem;
+}
+
+.App .User-Info {
+  width: 100%;
+  max-width: 750px;
+  margin: 5px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.App .User-Info h4 {
+  margin: 5px 15px;
+  font-size: 1.5rem;
+}
+
+.App .Controls {
+  width: 100vw;
+  max-width: 500px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.App .AddRegionToggle,
+.App .RelicToggle {
+  width: 150px;
+  padding: 0.5em;
+  margin: 20px 0px;
+  background: lightgray;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.RemainingRegions {
+  max-width: 90%;
+  list-style: none;
+  padding: 10px;
+  margin: 0px auto;
+}
+
+.RemainingRegions .RemainingRegions-Title {
+  margin: 0px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.RemainingRegions .Regions-Heading {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.RemainingRegions .Region {
+  width: 90%;
+  max-width: 500px;
+  height: 28px;
+  margin: 0px auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.RemainingRegions .Region .Region-Name {
+  margin: 5px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.Region > .Misthalin::before,
+.Region > .Karamja::before,
+.Region > .Asgarnia::before,
+.Region > .Fremennik::before,
+.Region > .Kandarin::before,
+.Region > .Kharidian::before,
+.Region > .Morytania::before,
+.Region > .Tirannwn::before,
+.Region > .Wilderness::before {
+  content: "";
+  width: 15px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  left: -20px;
+}
+
+.Area > .General::before,
+.Area > .Misthalin::before,
+.Area > .Karamja::before,
+.Area > .Asgarnia::before,
+.Area > .Fremennik::before,
+.Area > .Kandarin::before,
+.Area > .Kharidian::before,
+.Area > .Morytania::before,
+.Area > .Tirannwn::before,
+.Area > .Wilderness::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateY(30%);
+  left: -25px;
+  width: 21px;
+  height: 30px;
+}
+
+.General::before {
+  background: url(./Assets/Trailblazer_League_icon.png);
+  background-repeat: no-repeat;
+}
+
+.Misthalin::before {
+  background: url(./Assets/Misthalin.png) no-repeat;
+  background-size: contain;
+}
+
+.Karamja::before {
+  background: url(./Assets/Karamja.png) no-repeat;
+  background-size: contain;
+}
+
+.Asgarnia::before {
+  background: url(./Assets/Asgarnia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Fremennik::before {
+  background: url(./Assets/Fremennik.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Kandarin::before {
+  background: url(./Assets/Kandarin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Kharidian::before {
+  background: url(./Assets/Desert.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Morytania::before {
+  background: url(./Assets/Morytania.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Tirannwn::before {
+  background: url(./Assets/Tirannwn.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Wilderness::before {
+  background: url(./Assets/Wilderness.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 425px) {
+  .App .RemainingRegions > .Region {
+    flex-direction: column;
+    width: fit-content;
   }
 }

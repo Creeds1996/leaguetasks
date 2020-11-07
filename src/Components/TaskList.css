@@ -1,0 +1,13 @@
+.TaskList {
+}
+
+.TaskList .TaskArea {
+  font-size: 3rem;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.TaskList .TaskArea li {
+  font-size: 1rem;
+}

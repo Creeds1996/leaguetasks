@@ -1,0 +1,20 @@
+.Task {
+  width: fit-content;
+  margin: 0.2rem auto;
+  margin-bottom: 5px;
+  color: gray;
+  user-select: none;
+}
+
+.Task:hover {
+  cursor: pointer;
+}
+
+.Task.Completed {
+  color: green;
+}
+
+.Task .Task-Name,
+.Task .Task-Desc {
+  margin: 2px auto;
+}

@@ -1,0 +1,19 @@
+.Modal {
+  width: 90%;
+  max-width: 750px;
+  height: fit-content;
+  border-radius: 15px;
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: gray;
+  z-index: 2;
+}
+
+.Modal .Modal-Close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}

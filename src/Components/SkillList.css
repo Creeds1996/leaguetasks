@@ -1,0 +1,139 @@
+.SkillList {
+  width: 100%;
+  list-style: none;
+  margin: 0px auto;
+  padding: 0px;
+  font-size: small;
+}
+
+.SkillList .SkillList-Item {
+  width: fit-content;
+  height: 15px;
+  position: relative;
+  margin: 2px auto;
+}
+
+.SkillList .SkillList-Item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: -17px;
+  width: 15px;
+  height: 15px;
+}
+
+.Agility::before {
+  background: url(../Assets//Skills/Agility_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Attack::before {
+  background: url(../Assets/Skills/Attack_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Construction::before {
+  background: url(../Assets/Skills/Construction_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Cooking::before {
+  background: url(../Assets/Skills/Cooking_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Crafting::before {
+  background: url(../Assets/Skills/Crafting_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Defence::before {
+  background: url(../Assets/Skills/Defence_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Farming::before {
+  background: url(../Assets/Skills/Farming_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Firemaking::before {
+  background: url(../Assets/Skills/Firemaking_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Fishing::before {
+  background: url(../Assets/Skills/Fishing_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Fletching::before {
+  background: url(../Assets/Skills/Fletching_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Herblore::before {
+  background: url(../Assets/Skills/Herblore_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Hitpoints::before {
+  background: url(../Assets/Skills/Hitpoints_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Hunter::before {
+  background: url(../Assets/Skills/Hunter_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Magic::before {
+  background: url(../Assets/Skills/Magic_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Mining::before {
+  background: url(../Assets/Skills/Mining_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Prayer::before {
+  background: url(../Assets/Skills/Prayer_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Ranged::before {
+  background: url(../Assets/Skills/Ranged_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Runecraft::before {
+  background: url(../Assets/Skills/Runecraft_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Slayer::before {
+  background: url(../Assets/Skills/Slayer_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Smithing::before {
+  background: url(../Assets/Skills/Smithing_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Strength::before {
+  background: url(../Assets/Skills/Strength_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Thieving::before {
+  background: url(../Assets/Skills/Thieving_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Woodcutting::before {
+  background: url(../Assets/Skills/Woodcutting_icon.png) no-repeat;
+  background-size: contain;
+}
