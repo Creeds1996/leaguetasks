@@ -22,7 +22,7 @@ const Task = (props) => {
       onClick={onClickHandler}
     >
       <h4 className="Task-Name">{props.Name}</h4>
-      <h6 className="Task-Desc">{props.Desc}</h6>
+      <span className="Task-Desc">{props.Desc}</span>
       {props.Skills.length > 0 ? <SkillList Skills={props.Skills} /> : null}
       {props.Requirements.length > 0 ? "Reqs go here" : null}
     </li>

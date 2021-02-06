@@ -77,6 +77,24 @@
   margin: 5px 0px;
 }
 
+.RemainingRegions .Region .Region-Add,
+.RemainingRegions .Region .Region-Remove {
+  height: 1.5em;
+  width: 1.5em;
+  border: none;
+  border-radius: 30%;
+  background: rgb(129, 128, 128);
+}
+
+.RemainingRegions .Region .Region-Add:hover:enabled,
+.RemainingRegions .Region .Region-Remove:hover:enabled {
+  background: rgb(231, 231, 231);
+}
+
+.RemainingRegions .Region .Region-Add:disabled {
+  display: none;
+}
+
 .Region > .Misthalin::before,
 .Region > .Karamja::before,
 .Region > .Asgarnia::before,

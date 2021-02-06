@@ -100,7 +100,7 @@ const App = () => {
                   <li className="Region">
                     <h4 className={`Region-Name ${area}`}>{area}</h4>
                     <button
-                      className="Region-Add"
+                      className="Region-Remove"
                       onClick={() => toggleRegion(area)}
                     >
                       -

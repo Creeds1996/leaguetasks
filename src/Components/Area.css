@@ -1,11 +1,13 @@
 .Area {
+  max-width: 600px;
+  margin: 0px auto;
   margin-bottom: 25px;
 }
 
 .Area .Area-Title {
   position: relative;
   width: fit-content;
-  max-width: 50%;
+  max-width: 150px;
   margin: 0px auto;
   font-size: 2rem;
 }

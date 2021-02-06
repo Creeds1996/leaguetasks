@@ -1,7 +1,7 @@
 .SkillList {
   width: 100%;
   list-style: none;
-  margin: 0px auto;
+  margin: 5px auto;
   padding: 0px;
   font-size: small;
 }
@@ -30,6 +30,11 @@
 
 .Attack::before {
   background: url(../Assets/Skills/Attack_icon.png) no-repeat;
+  background-size: contain;
+}
+
+.Combat::before {
+  background: url(../Assets/Skills/Combat_Icon.png) no-repeat;
   background-size: contain;
 }
 
